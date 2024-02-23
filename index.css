@@ -1,0 +1,258 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+table { border-collapse: collapse; width: 100%; }
+ol, ul { list-style: none;}
+a { text-decoration: none; color: #111; }
+address { font-style: normal; }
+
+body {
+    font-family: 'Single Day', cursive;
+    line-height: 1.5;
+    color: #222;
+}
+#wrap {
+    width: 1000px;
+    margin: 50px auto;
+}
+.intro {
+    width: 500px;
+    margin: 0 250px;
+}
+.intro h1 {
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 2px solid #111;
+}
+.intro p {
+    text-align: right;
+    font-size: 20px;
+}
+.contents {
+    width: 1000px;
+    height: 1000px;
+}
+
+.box1 {
+    float: left;
+    width: 300px;
+    height: 230px;
+    border: 10px solid black;
+    border-radius: 50%;
+    position: relative;
+    transform: rotate(-20deg);
+    margin: 15px 90px;
+}
+.box1::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 15px;
+    background-color: black;
+    position: absolute;
+    top: 53%;
+    left: -56px;
+    transform: rotate(-8deg);
+}
+.box1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 15px;
+    background-color: black;
+    position: absolute;
+    top: 35%;
+    right: -48px;
+    transform: rotate(-7deg);
+}
+.box1 > a {
+    position: absolute;
+    display: block;
+}
+.box1 .mbti1 {
+    top: 26%;
+    left: 9%;
+}
+.box1 .mbti2 {
+    top: -3%;
+    left: 33%;
+}
+.box1 .mbti3 {
+    top: 47%;
+    left: 55%;
+}
+.box1 .mbti4 {
+    top: 15%;
+    left: 73%;
+}
+.box1 h2 {
+    transform: rotate(-20deg);
+    font-size: 70px;
+    line-height: 100%;
+}
+.box1 p {
+    top: 20%;
+    left: 10%;
+    font-size: 10px;
+    line-height: 90%;
+}
+.box2 {
+    float: right;
+    width: 300px;
+    height: 200px;
+    border: 10px solid black;
+    border-radius: 50%;
+    position: relative;
+    transform: rotate(-20deg);
+    margin: 15px 110px;
+}
+.box2 > a {
+    position: absolute;
+    display: block;
+}
+.box2 h2 {
+    position: absolute;
+    top: 4%;
+    left: 44%;
+    font-size: 36px;
+    transform: rotate(20deg);
+}
+.box2 .hobby1 {top: 63%; left: 25%;}
+.box2 .hobby2 {top: 36%; left: 40%; transform: rotate(15deg);}
+.box2 .hobby3 {top: 10%;  left: 20%;}
+.box2 .hobby4 {top: 57%;  left: 65%; transform: rotate(30deg);}
+.box2 .hobby5 {top: 33%;  left: 6%; transform: rotate(40deg);}
+.box2 .hobby6 {top: 26%;  left: 74%; transform: rotate(20deg);}
+
+.box3 {
+    float: right;
+    width: 125px;
+    height: 125px;
+    border: 8px solid black;
+    border-radius: 50%;
+    position: relative;
+    background: url(images/music_01.jpg) no-repeat -344px -107px;
+    top: 17%;
+    left: -31%;
+}
+.box4 {
+    float: right;
+    width: 125px;
+    height: 125px;
+    border: 8px solid black;
+    border-radius: 50%;
+    position: relative;
+    background: url(images/music_02.jpg) no-repeat -55px -27px;
+    top: 7%;
+    left: -8%;
+}
+.box5 {
+    float: right;
+    width: 125px;
+    height: 125px;
+    border: 8px solid black;
+    border-radius: 50%;
+    position: relative;
+    background: url(images/music_03.jpg) no-repeat -192px -270px;
+    top: -3%;
+    left: 15%;
+}
+.box3 p {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+}
+.box4 p {
+    position: absolute;
+    top: 110%;
+    left: 30%;
+    letter-spacing: -2px;
+}
+.box5 p {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    letter-spacing: -1px;
+}
+.box3::before {
+    content: "";
+    display: block;
+    width: 207px;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    top: 147%;
+    left: -90px;
+    transform: rotate(-100deg);
+}
+.box4::before {
+    content: "";
+    display: block;
+    width: 197px;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    top: 145%;
+    left: -85px;
+    transform: rotate(-100deg);
+}
+.box5::before {
+    content: "";
+    display: block;
+    width: 197px;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    top: 145%;
+    left: -85px;
+    transform: rotate(-100deg);
+}
+.box3::after {
+    content: "";
+    display: block;
+    width: 303px;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    top: 144%;
+    left: -15px;
+    transform: rotate(-45deg);
+}
+
+.images {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+}
+.images > a {
+    position: absolute;
+}
+.images .img1 {
+    top: 24%;
+    left: 15%;
+    width: 200px;
+    height: 270px;
+}
+.images .img1 img {width: 100%;}
+.images .img2 {
+    top: 15%;
+    left: 33%;
+    width: 350px;
+    height: 500px;
+}
+.images .img2 img {width: 100%;}
+.images .img3 {
+    top: 6%;
+    left: 5%;
+    width: 900px;
+    height: 500px;
+}
+.images .img3 img {width: 100%;}
+.images .img4 {
+    top: 72%;
+    left: 5%;
+    width: 900px;
+    height: 280px;
+}
+.images .img4 img {width: 100%;}
